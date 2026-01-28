@@ -5,7 +5,6 @@ A simple Python-based banking prototype that handles account data and basic tran
 * **Account Creation:** Set up new user accounts.
 * **Balance Inquiry:** Check current funds.
 * **Data Persistence:** Saves account info to `.txt` files so data isn't lost when you close the program.
-* **Coordinate Check:** Includes a utility to check if a point is within a circle (useful for location-based services).
 
 ## 🛠️ Tech Stack
 * **Language:** Python 3.14
