@@ -14,3 +14,6 @@ A simple Python-based banking prototype that handles account data and basic tran
 1. Clone the repository:
    ```bash
    git clone [https://github.com/Maharshi-spec/mini-bank-system.git](https://github.com/Maharshi-spec/mini-bank-system.git)
+2. Run the script:
+   ```bash
+   python "bank prototype.py"
