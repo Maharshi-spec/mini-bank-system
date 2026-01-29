@@ -1,0 +1,23 @@
+# 1. Read data from the file into lists
+names = []
+acc_nums = []
+passwords = []
+balances = []
+# 2. Main Program Loop
+while True:
+    print("\n--- Mini Bank System ---")
+    print("c: Create | e: Exit")
+    choice = input("Enter your choice: ").lower()
+    if choice == 'c':
+        names.append(input("Enter you name: "))
+        acc_nums.append(input("Enter account number: "))
+        passwords.append(input("Enter password: "))
+        balances.append(float(input("Enter initial balance: ")))
+    elif choice == 'e':
+        with open("/content/account_data.txt", "w") as fd:
+            for i in range(len(names)):
+                fd.write(f"{names[i]}, {acc_nums[i]}, {passwords[i]}, {balances[i]}\n")
+        print("Changes saved. Thankyou for using our service! Goodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again.")
